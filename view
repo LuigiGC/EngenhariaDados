@@ -1,0 +1,8 @@
+--view
+CREATE VIEW ProjetoClienteView AS
+SELECT Projeto.Nome as ProjetoNome, Cliente.Nome as ClienteNome, Cliente.Empresa 
+FROM Projeto 
+JOIN ProjetoDoCliente ON Projeto.idProjeto = ProjetoDoCliente.idProjeto 
+JOIN Cliente ON ProjetoDoCliente.idCliente = Cliente.idCliente;
+
+SELECT * FROM ProjetoClienteView;
