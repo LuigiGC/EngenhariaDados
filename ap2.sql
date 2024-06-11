@@ -1,3 +1,6 @@
+--Feito por: Luigi Fernando 202304419108
+--Feito por: Guilherme Dantas 202309013088
+
 CREATE DATABASE Empresai;
 USE Empresai;
 
