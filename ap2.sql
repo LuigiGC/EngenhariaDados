@@ -132,11 +132,11 @@ WHERE pr.color = 'y'
 ORDER BY pr.price
 LIMIT 1;
 --3.9
-SELECT p.maker, COUNT(DISTINCT p.model) AS num_models
-FROM product p
-JOIN pc ON p.model = pc.model
-GROUP BY p.maker
-HAVING COUNT(DISTINCT p.model) >= 3;
+SELECT maker, COUNT(model) AS num_models
+FROM product
+WHERE type = 'PC'
+GROUP BY maker
+HAVING COUNT(model) >= 3;
 --3.10
 SELECT p.maker, MAX(pc.price) AS max_price
 FROM pc
