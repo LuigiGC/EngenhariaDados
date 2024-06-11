@@ -43,7 +43,7 @@ INSERT INTO product (maker, model, type) VALUES
 ('A', '1233', 'PC'),
 ('E', '1260', 'PC'),
 ('A', '1276', 'Printer'),
-('Ꭰ', '1288', 'Printer'),
+('D', '1288', 'Printer'),
 ('A', '1298', 'Laptop'),
 ('C', '1321', 'Laptop'),
 ('A', '1401', 'Printer'),
